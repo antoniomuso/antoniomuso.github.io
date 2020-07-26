@@ -1,2 +1,2 @@
 # personal-page
-This is my personal wepage
+This is my personal webpage
