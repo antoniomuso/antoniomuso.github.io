@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
-import { GitHub } from "../utils/github";
-import env from "../utils/envs";
+import { GitHub } from "../../components/utils/github";
+import env from "../../components/utils/envs";
 import PortfolioCard from "@/components/Portfolio/PortfolioCard";
+import { PortFolioList } from "@/components/Portfolio/PortfolioList";
 
 const getData = async () => {
   const client = new GitHub(env.GITHUB_USERNAME, env.GITHUB_TOKEN);
@@ -24,18 +25,7 @@ const Portfolio: NextPage = async () => {
             </div>
           </div>
           <div className="row">
-            {/* Portfolio Item */}
-            {githubPinnedProjects.map((item) => (
-              <PortfolioCard
-                key={item.nameWithOwner}
-                title={item.nameWithOwner}
-                description={item.description}
-                stars={item.stargazerCount}
-                url={item.url}
-              />
-            ))}
-
-            {/* Portfolio Item End*/}
+            <PortFolioList githubPinnedProjects={githubPinnedProjects}/>
           </div>
         </div>
       </section>

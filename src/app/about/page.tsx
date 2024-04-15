@@ -1,6 +1,18 @@
 import type { NextPage } from "next";
+import env from "../../components/utils/envs";
+import { GitHub } from "../../components/utils/github";
 
-const About: NextPage = () => {
+const getData = async () => {
+  const client = new GitHub(env.GITHUB_USERNAME, env.GITHUB_TOKEN);
+
+  const githubProfileBio = await client.getProfileBio();
+
+  return { githubProfileBio };
+};
+
+const About: NextPage = async () => {
+  const { githubProfileBio } = await getData();
+
   return (
     <main>
       <section className="about section" id="about">
@@ -18,10 +30,7 @@ const About: NextPage = () => {
                     I am Antonio Musolino a <span>DevEx - Backend Expert</span>
                   </h2>
                   <p>
-                    Hi! My name is Antonio Musolino I am a Software Engineer,
-                    and my interests are Cloud, Artificial intelligence, and
-                    technologies. Node.js & Rust addicted 🦀! Curr, I am working
-                    as a DevX En.
+                    {githubProfileBio}
                   </p>
                 </div>
               </div>

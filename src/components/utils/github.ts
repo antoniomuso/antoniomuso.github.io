@@ -10,7 +10,7 @@ export type PinnedProject = {
   stargazerCount: number;
   primaryLanguage: {
     name: string;
-  }
+  };
 };
 
 export class GitHub {
@@ -24,6 +24,18 @@ export class GitHub {
         authorization: `token ${token}`,
       },
     });
+  }
+
+  async getProfileBio() {
+    const res = (await this.client(`
+        {
+          user(login: "${this.username}") {
+            bio
+          }
+        }
+    `)) as { user: { bio: string } };
+
+    return res.user.bio;
   }
 
   async getPinnedProjects(): Promise<PinnedProject[]> {
@@ -40,6 +52,9 @@ export class GitHub {
                 createdAt
                 updatedAt
                 stargazerCount
+                primaryLanguage {
+                  name
+                }
               }
             }
           }
