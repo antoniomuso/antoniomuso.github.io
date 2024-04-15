@@ -922,6 +922,11 @@ select {
 
 /* Blog Section started
 ========================================================================== */
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
 .blog .container {
   padding-bottom: 40px;
 }

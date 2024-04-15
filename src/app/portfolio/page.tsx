@@ -3,7 +3,7 @@ import { GitHub } from "../utils/github";
 import env from "../utils/envs";
 import PortfolioCard from "@/components/Portfolio/PortfolioCard";
 
-export const getData = async () => {
+const getData = async () => {
   const client = new GitHub(env.GITHUB_USERNAME, env.GITHUB_TOKEN);
 
   const githubPinnedProjects = await client.getPinnedProjects();
@@ -14,7 +14,6 @@ export const getData = async () => {
 const Portfolio: NextPage = async () => {
   const { githubPinnedProjects } = await getData();
 
-  console.log(githubPinnedProjects);
   return (
     <div>
       <section className="blog section" id="portfolio">
@@ -32,6 +31,7 @@ const Portfolio: NextPage = async () => {
                 title={item.nameWithOwner}
                 description={item.description}
                 stars={item.stargazerCount}
+                url={item.url}
               />
             ))}
 
