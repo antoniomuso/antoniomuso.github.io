@@ -27,11 +27,10 @@ const About: NextPage = async () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I am Antonio Musolino a <span>DevEx - Backend Expert</span>
+                    I am Antonio Musolino a{" "}
+                    <span>DevEx - Software Engineer</span>
                   </h2>
-                  <p>
-                    {githubProfileBio}
-                  </p>
+                  <p>{githubProfileBio}</p>
                 </div>
               </div>
               <div className="row">
@@ -39,18 +38,29 @@ const About: NextPage = async () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>antoniomusolino.com</span>
+                        Website:
+                        <a href="https://antoniomusolino.com">
+                          <span>antoniomusolino.com</span>
+                        </a>
+                      </p>
+                    </div>
+                    <div className="info-item padd-15">
+                      <p>
+                        GitHub:
+                        <a href="https://github.com/antoniomuso">
+                          <span>github.com/antoniomuso</span>
+                        </a>
                       </p>
                     </div>
 
                     <div className="info-item padd-15">
                       <p>
-                        Degree : <span>Computer Science</span>
+                        Degree: <span>Computer Science</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        City : <span>Rome</span>
+                        City: <span>Rome</span>
                       </p>
                     </div>
                   </div>
@@ -76,33 +86,27 @@ const About: NextPage = async () => {
                 <div className="skills padd-15">
                   <div className="row">
                     <div className="skill-item padd-15">
-                      <h5>Html5</h5>
+                      <h5>Node.js</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "80%" }} />
-                        <div className="skill-percent">80%</div>
+                        <div className="progress-in" style={{ width: "95%" }} />
+                        <div className="skill-percent">95%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>Css3</h5>
+                      <h5>JavaScript</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "95%" }} />
+                        <div className="skill-percent">95%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Rust</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "60%" }} />
                         <div className="skill-percent">60%</div>
                       </div>
                     </div>
-                    <div className="skill-item padd-15">
-                      <h5>Javascript</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{ width: "50%" }} />
-                        <div className="skill-percent">50%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>Bootstrap</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{ width: "70%" }} />
-                        <div className="skill-percent">70%</div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -112,54 +116,69 @@ const About: NextPage = async () => {
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
-                        {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
+                            <p>
+                              <i className="fa fa-calendar" /> 2018 - March 2021
+                            </p>
+                            <p>
+                              <i className="fa fa-building" /> Sapienza
+                              University of Rome
+                            </p>
                           </h6>
                           <h4 className="timeline-title">
-                            Self Taught (Programming)
+                            Master degree in Computer Science
                           </h4>
                           <p className="timeline-text">
-                            Since 2020 I started to learn Programming. I have
-                            learn Html, Css, Sass, JavaScript, Bootstrap. Now I
-                            am a Professional Web Designer..
+                            <ul>
+                              <li>
+                                <strong>Grade:</strong> 110/110 with honors,
+                                equivalent to 4 GPA
+                              </li>
+                              <li>
+                                <strong>Thesis title:</strong> "FogKube: a
+                                container orchestration system for fog
+                                computing"
+                              </li>
+                              <li>
+                                <strong>Course language:</strong> English
+                              </li>
+                            </ul>
                           </p>
                         </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019 to Present
+                            <p>
+                              <i className="fa fa-calendar" /> 2015 - 2018
+                            </p>
+                            <p>
+                              <i className="fa fa-building" /> Sapienza
+                              University of Rome
+                            </p>
                           </h6>
                           <h4 className="timeline-title">
-                            Diploma in Civil Engineering
+                            Bachelor's degree in Computer Science
                           </h4>
                           <p className="timeline-text">
-                            From 2019 I started my journey to be a Civil
-                            Engineer on Shyamoli Ideal Polytechnic Institute. It
-                            still Running to Present.
+                            <ul>
+                              <li>
+                                <strong>Grade:</strong> 110/110 with honors,
+                                equivalent to 4 GPA
+                              </li>
+                              <li>
+                                <strong>Thesis title:</strong> "Disambiguation
+                                of natural language applied to home automation:
+                                Design and implementation of CommandsBN a
+                                library based on Babel-Net"
+                              </li>
+                              <li>
+                                <strong>Course language:</strong> Italian
+                              </li>
+                            </ul>
                           </p>
                         </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2014 to 2019
-                          </h6>
-                          <h4 className="timeline-title">
-                            Secondary School Certificate
-                          </h4>
-                          <p className="timeline-text">
-                            In 2019 I passed SSC Exam from Science Group with
-                            GPA- 4.56. My school name was Patgram Anath Bondhu
-                            Govt. High School.
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
                       </div>
                     </div>
                   </div>
@@ -173,40 +192,22 @@ const About: NextPage = async () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019 to Present
+                            <p>
+                              <i className="fa fa-calendar" /> 2021 - Present
+                            </p>
+                            <p>
+                              <i className="fa fa-building" /> Immobiliare.it
+                            </p>
+                            <p>
+                              <i className="fa fa-map-marker" /> Remote
+                            </p>
                           </h6>
-                          <h4 className="timeline-title">Graphics Design</h4>
+                          <h4 className="timeline-title">Software Engineer</h4>
                           <p className="timeline-text">
-                            From 2018 I am woking on Graphics Design. The
-                            software I use Photoshop, Illustrator for Graphics
-                            design.
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
-                          </h6>
-                          <h4 className="timeline-title">Web Design</h4>
-                          <p className="timeline-text">
-                            Since 2020 I started to learn Coding. I have learn
-                            Html, Css, Sass, JavaScript, Bootstrap. Now I am a
-                            Professional Web Designer..
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
-                          </h6>
-                          <h4 className="timeline-title">Wordpress</h4>
-                          <p className="timeline-text">
-                            Since 2020 I started to learn Wordpress. I can
-                            install, Customize, &amp; fix bug on wordpress.{" "}
+                            Software engineer in the technology team of{" "}
+                            <em>Immobiliare.it</em> oriented into developer
+                            experience but also in automation, performance
+                            optimization, and technology research.
                           </p>
                         </div>
                         {/* Timeline Item end */}
