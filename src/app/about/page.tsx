@@ -74,7 +74,7 @@ const About: NextPage = async () => {
                         Download CV
                       </a>
                       <a
-                        href="#contact"
+                        href="/contact"
                         data-section-index={0}
                         className="btn hire-me"
                       >
@@ -106,7 +106,6 @@ const About: NextPage = async () => {
                         <div className="skill-percent">60%</div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -130,8 +129,7 @@ const About: NextPage = async () => {
                           <h4 className="timeline-title">
                             Master degree in Computer Science
                           </h4>
-                          <p className="timeline-text">
-                            <ul>
+                          <ul className="timeline-text-ul timeline-text">
                               <li>
                                 <strong>Grade:</strong> 110/110 with honors,
                                 equivalent to 4 GPA
@@ -145,7 +143,6 @@ const About: NextPage = async () => {
                                 <strong>Course language:</strong> English
                               </li>
                             </ul>
-                          </p>
                         </div>
                         <div className="timeline-item">
                           <div className="circle-dot" />
@@ -161,23 +158,21 @@ const About: NextPage = async () => {
                           <h4 className="timeline-title">
                             Bachelor's degree in Computer Science
                           </h4>
-                          <p className="timeline-text">
-                            <ul>
-                              <li>
-                                <strong>Grade:</strong> 110/110 with honors,
-                                equivalent to 4 GPA
-                              </li>
-                              <li>
-                                <strong>Thesis title:</strong> "Disambiguation
-                                of natural language applied to home automation:
-                                Design and implementation of CommandsBN a
-                                library based on Babel-Net"
-                              </li>
-                              <li>
-                                <strong>Course language:</strong> Italian
-                              </li>
-                            </ul>
-                          </p>
+                          <ul className="timeline-text-ul timeline-text">
+                            <li>
+                              <strong>Grade:</strong> 110/110 with honors,
+                              equivalent to 4 GPA
+                            </li>
+                            <li>
+                              <strong>Thesis title:</strong> "Disambiguation of
+                              natural language applied to home automation:
+                              Design and implementation of CommandsBN a library
+                              based on Babel-Net"
+                            </li>
+                            <li>
+                              <strong>Course language:</strong> Italian
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
