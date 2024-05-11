@@ -1,3 +1,4 @@
+import ContactData from "@/components/Contact/ContactData";
 import type { NextPage } from "next";
 
 const Contact: NextPage = () => {
@@ -11,89 +12,31 @@ const Contact: NextPage = () => {
             </div>
           </div>
           <div className="row">
-            {/* contact-info-item */}
-            <div className="contact-info-item padd-15">
-              <div className="icon">
-                <i className="fa fa-map-marker" />
-              </div>
-              <h4>Address</h4>
-              <p>Your Address, City</p>
-            </div>
-            {/* contact-info-item Ended */}
-            {/* contact-info-item */}
-            <div className="contact-info-item padd-15">
-              <div className="icon">
-                <i className="fa fa-phone" />
-              </div>
-              <h4>Call Us On</h4>
-              <p>+99 **********</p>
-            </div>
-            {/* contact-info-item Ended */}
-            {/* contact-info-item */}
-            <div className="contact-info-item padd-15">
-              <div className="icon">
-                <i className="fa fa-envelope" />
-              </div>
-              <h4>Email</h4>
-              <p>your@email.com</p>
-            </div>
-            {/* contact-info-item Ended */}
+            <ContactData
+              contactKey="Email"
+              faClassIcon="fa-envelope"
+              contactValue="antoniomusolino007@gmail.com"
+              showedValue="ant*********07@gmail.com"
+            />
+            <ContactData
+              contactKey="Linkedin"
+              faClassIcon="fa-linkedin"
+              contactValue="https://www.linkedin.com/in/antonio-musolino"
+              showedValue="antonio-musolino"
+            />
+            <ContactData
+              contactKey="Instagram"
+              faClassIcon="fa-instagram"
+              contactValue="https://www.instagram.com/totone_mu"
+              showedValue="totone_mu"
+            />
+            <ContactData
+              contactKey="Facebook"
+              faClassIcon="fa-facebook"
+              contactValue="https://www.facebook.com/antonio.k.musolino"
+              showedValue="antonio.k.musolino"
+            />
           </div>
-          {/* Contact Form */}
-          <div className="row">
-            <form className="contact-form padd-15">
-              <div className="row">
-                <div className="form-item col-6 padd-15">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Name*"
-                    />
-                  </div>
-                </div>
-                <div className="form-item col-6 padd-15">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Email*"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="form-item col-12 padd-15">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Subject*"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="form-item col-12 padd-15">
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      placeholder="Your Message*"
-                      defaultValue={""}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12 padd-15">
-                  <button type="submit" className="btn">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          {/* Contact Form Ended */}
         </div>
       </section>
     </>

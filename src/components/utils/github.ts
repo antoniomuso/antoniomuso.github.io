@@ -17,11 +17,11 @@ export class GitHub {
   private username: string;
   private client: typeof graphql;
 
-  constructor(username: string, token: string) {
+  constructor(username: string, token?: string) {
     this.username = username;
     this.client = graphql.defaults({
       headers: {
-        authorization: `token ${token}`,
+        ...(token ? { authorization: `token ${token}` } : {}),
       },
     });
   }

@@ -67,7 +67,7 @@ const About: NextPage = async () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="/assets/docs/resume.pdf"
+                        href="/assets/cv.pdf"
                         target="_target"
                         className="btn"
                       >
@@ -102,10 +102,18 @@ const About: NextPage = async () => {
                     <div className="skill-item padd-15">
                       <h5>Rust</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "60%" }} />
-                        <div className="skill-percent">60%</div>
+                        <div className="progress-in" style={{ width: "65%" }} />
+                        <div className="skill-percent">65%</div>
                       </div>
                     </div>
+                    <div className="skill-item padd-15">
+                      <h5>SQL (PostgresSQL, MySQL)</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "90%" }} />
+                        <div className="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>

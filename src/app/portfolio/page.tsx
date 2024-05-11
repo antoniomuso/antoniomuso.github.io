@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { GitHub } from "../../components/utils/github";
 import env from "../../components/utils/envs";
-import PortfolioCard from "@/components/Portfolio/PortfolioCard";
 import { PortFolioList } from "@/components/Portfolio/PortfolioList";
 
 const getData = async () => {

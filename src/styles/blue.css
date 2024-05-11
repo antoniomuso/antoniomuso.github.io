@@ -39,3 +39,7 @@ body.dark .aside .nav li a.active,
 .portfolio .portfolio-filter button.active {
   border-color: #2196f3;
 }
+
+.popup div {
+  background-color: #2196f3;
+}
