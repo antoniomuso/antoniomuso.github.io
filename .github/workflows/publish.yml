@@ -33,6 +33,7 @@ jobs:
           touch .env.production
           echo GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} >> .env.production
           echo GITHUB_USERNAME=${{ secrets.USERNAME_GITHUB }} >> .env.production
+          cat .env.production
 
       - name: Build with Next.js 🏗️
         run: npx next build
