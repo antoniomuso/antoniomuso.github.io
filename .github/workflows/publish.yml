@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+env:
+  env_var: ${{ vars.ENV_CONTEXT_VAR }}
 
 permissions:
   contents: read
@@ -35,7 +37,7 @@ jobs:
           echo GITHUB_USERNAME=$USERNAME_GITHUB >> .env.production
           cat .env.production
         env:
-          USERNAME_GITHUB: ${{ vars.USERNAME_GITHUB }}
+          USERNAME_GITHUB: antoniomuso
 
       - name: Build with Next.js 🏗️
         run: npx next build
