@@ -31,7 +31,7 @@ jobs:
       - name: Created production env
         run: |
           touch .env.production
-          echo GITHUB_TOKEN=${{ secrets.TOKEN_GITHUB }} >> .env.production
+          echo GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} >> .env.production
           echo GITHUB_USERNAME=${{ secrets.USERNAME_GITHUB }} >> .env.production
 
       - name: Build with Next.js 🏗️
