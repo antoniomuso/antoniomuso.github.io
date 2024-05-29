@@ -52,7 +52,6 @@ const About: NextPage = async () => {
                         </a>
                       </p>
                     </div>
-
                     <div className="info-item padd-15">
                       <p>
                         Degree: <span>Computer Science</span>
@@ -61,6 +60,16 @@ const About: NextPage = async () => {
                     <div className="info-item padd-15">
                       <p>
                         City: <span>Rome</span>
+                      </p>
+                    </div>
+                    <div className="info-item padd-15">
+                      <p>
+                        Languages: <span>Italian, English (Fluent)</span>
+                      </p>
+                    </div>
+                    <div className="info-item padd-15">
+                      <p>
+                        Interests: <span>Cloud, AI, DevX</span>
                       </p>
                     </div>
                   </div>
@@ -102,7 +111,7 @@ const About: NextPage = async () => {
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>PostgresSQL, MySQL</h5>
+                      <h5>SQL</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "90%" }} />
                         <div className="skill-percent">90%</div>
