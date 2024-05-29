@@ -65,21 +65,16 @@ const About: NextPage = async () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="buttons padd-15">
-                      <a
-                        href="/assets/cv.pdf"
-                        target="_target"
-                        className="btn"
-                      >
-                        Download CV
-                      </a>
-                      <a
-                        href="/contact"
-                        data-section-index={0}
-                        className="btn hire-me"
-                      >
-                        Hire Me
-                      </a>
+                    <div className="row">
+                      <div className="buttons padd-15">
+                        <a
+                          href="/contact"
+                          data-section-index={0}
+                          className="btn hire-me"
+                        >
+                          Contact Me
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -102,18 +97,61 @@ const About: NextPage = async () => {
                     <div className="skill-item padd-15">
                       <h5>Rust</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "65%" }} />
-                        <div className="skill-percent">65%</div>
+                        <div className="progress-in" style={{ width: "75%" }} />
+                        <div className="skill-percent">75%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>SQL (PostgresSQL, MySQL)</h5>
+                      <h5>PostgresSQL, MySQL</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "90%" }} />
                         <div className="skill-percent">90%</div>
                       </div>
                     </div>
-                    
+                    <div className="skill-item padd-15">
+                      <h5>Kubernetes</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "85%" }} />
+                        <div className="skill-percent">85%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="skill-item padd-15">
+                      <h5>Ansible</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "80%" }} />
+                        <div className="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Python</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "80%" }} />
+                        <div className="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Linux</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "80%" }} />
+                        <div className="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Docker</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "95%" }} />
+                        <div className="skill-percent">95%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>Go</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "60%" }} />
+                        <div className="skill-percent">60%</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -138,19 +176,18 @@ const About: NextPage = async () => {
                             Master degree in Computer Science
                           </h4>
                           <ul className="timeline-text-ul timeline-text">
-                              <li>
-                                <strong>Grade:</strong> 110/110 with honors,
-                                equivalent to 4 GPA
-                              </li>
-                              <li>
-                                <strong>Thesis title:</strong> "FogKube: a
-                                container orchestration system for fog
-                                computing"
-                              </li>
-                              <li>
-                                <strong>Course language:</strong> English
-                              </li>
-                            </ul>
+                            <li>
+                              <strong>Grade:</strong> 110/110 with honors,
+                              equivalent to 4 GPA
+                            </li>
+                            <li>
+                              <strong>Thesis title:</strong> "FogKube: a
+                              container orchestration system for fog computing"
+                            </li>
+                            <li>
+                              <strong>Course language:</strong> English
+                            </li>
+                          </ul>
                         </div>
                         <div className="timeline-item">
                           <div className="circle-dot" />
@@ -211,6 +248,39 @@ const About: NextPage = async () => {
                             <em>Immobiliare.it</em> oriented into developer
                             experience but also in automation, performance
                             optimization, and technology research.
+                          </p>
+                          <br />
+                          <p className="timeline-text">
+                            <ul className="timeline-text-ul timeline-text">
+                              <li>
+                                Orchestrated the upgrade of production
+                                application tools using Ansible, ensuring
+                                minimal downtime and risk mitigation.
+                              </li>
+                              <li>
+                                Spearheaded the development of the internal
+                                developer portal leveraging{" "}
+                                <strong>Backstage</strong>, contributing to the
+                                open-source ImmobiliareLabs Backstage Plugins
+                                ecosystem.
+                              </li>
+                              <li>
+                                Implemented CI/CD tools using Rust, optimizing
+                                development workflows and ensuring efficient
+                                delivery pipelines.
+                              </li>
+                              <li>
+                                Designed and integrated data visualization tools
+                                (DevLake) with Grafana and MySQL, enhancing
+                                data-driven decision-making.
+                              </li>
+                              <li>
+                                Provided high-level support to the product team
+                                for critical tasks on Node.js, ensuring
+                                application stability, performance, and
+                                security.
+                              </li>
+                            </ul>
                           </p>
                         </div>
                         {/* Timeline Item end */}

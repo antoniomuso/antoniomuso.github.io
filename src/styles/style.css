@@ -479,6 +479,12 @@ select {
   max-width: 40%;
   margin-top: 40px;
 }
+.skills {
+  columns: 2;
+}
+.end {
+  margin-top: auto;
+}
 .about .about-content .skills .skill-item {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
