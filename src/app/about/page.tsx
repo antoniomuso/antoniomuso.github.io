@@ -59,7 +59,7 @@ const About: NextPage = async () => {
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        City: <span>Rome</span>
+                        City: <span>Bologna</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
