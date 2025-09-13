@@ -43,3 +43,11 @@ body.dark .aside .nav li a.active,
 .popup div {
   background-color: #2196f3;
 }
+
+.timeline-item  a {
+  color: #2196f3;
+}
+
+.timeline-item  a:hover{
+  color: #023d6d;
+}

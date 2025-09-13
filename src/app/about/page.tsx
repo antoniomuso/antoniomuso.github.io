@@ -28,7 +28,7 @@ const About: NextPage = async () => {
                 <div className="about-text padd-15">
                   <h2>
                     I am Antonio Musolino a{" "}
-                    <span>DevEx - Software Engineer</span>
+                    <span>Senior Full Stack Engineer</span>
                   </h2>
                   <p>{githubProfileBio}</p>
                 </div>
@@ -242,7 +242,31 @@ const About: NextPage = async () => {
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
                             <p>
-                              <i className="fa fa-calendar" /> 2021 - Present
+                              <i className="fa fa-calendar" /> 2025 - Present
+                            </p>
+                            <p>
+                              <i className="fa fa-building" /> Garden Computing
+                            </p>
+                            <p>
+                              <i className="fa fa-map-marker" /> Remote
+                            </p>
+                          </h6>
+                          <h4 className="timeline-title">Senior Full Stack Engineer</h4>
+                          <p className="timeline-text" style={{color: ""}}>
+                            Working as a senior full stack engineer at <a href="https://jazz.tools/" target="_blank" rel="noopener noreferrer">Jazz Tools</a> a new kind of database that's distributed across your frontend, 
+                            containers, serverless functions and its own storage cloud.
+                            
+                          </p>
+                          <p className="timeline-text">
+                            <br />
+                            <strong>Technologies</strong>: Rust, TypeScript, React, Node.js.
+                          </p>
+                        </div>
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <p>
+                              <i className="fa fa-calendar" /> 2021 - 2025
                             </p>
                             <p>
                               <i className="fa fa-building" /> Immobiliare.it
